@@ -4,16 +4,16 @@
 :root {
     /*------------ Color ------------*/
     --clr-main-2: hsl(0, 79%, 63%);
-        --clr-pink: hsl(0, 100%, 95%);
-        --clr-advanced: hsl(209, 79%, 63%);
-        --clr-green: hsl(145, 63%, 42%);
-        --clr-light-green: hsl(133, 100%, 95%);
-        --clr-main: hsl(207, 67%, 94%);
-        --clr-blue: hsl(207, 63%, 63%);
-        --clr-border: hsl(0, 0%, 77%);
-        --clr-gray: hsl(0, 0%, 51%);
-        --clr-black: hsl(0, 0%, 0%);
-        --clr-black-2: hsl(0, 0%, 25%);
+    --clr-pink: hsl(0, 100%, 95%);
+    --clr-advanced: hsl(209, 79%, 63%);
+    --clr-green: hsl(145, 63%, 42%);
+    --clr-light-green: hsl(133, 100%, 95%);
+    --clr-main: hsl(207, 67%, 94%);
+    --clr-blue: hsl(207, 63%, 63%);
+    --clr-border: hsl(0, 0%, 77%);
+    --clr-gray: hsl(0, 0%, 51%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-black-2: hsl(0, 0%, 25%);
     /*------------ TextColor ------------*/
     --text-white: hsl(0, 0%, 98%);
     --text-black: hsl(0, 0%, 30%);
@@ -25,7 +25,7 @@
     --border-gray: hsl(220, 9%, 87%);
 
     /*------------ Fonts ------------*/
-        --font-headings: 'Oswald', 'sans-serif';
+    --font-headings: 'Oswald', 'sans-serif';
 }
 
 /* ------------ Components ------------ */
@@ -43,7 +43,7 @@ header {
 
 .searchIcon input {
     width: 300px;
-        border-bottom: 1px solid var(--border-white);
+    border-bottom: 1px solid var(--border-white);
     background-color: var(--clr-black);
     color: var(--text-white);
     -webkit-transition: all 0.5s ease-in-out;
@@ -54,6 +54,7 @@ header {
     width: 300px;
     border-bottom: 1px solid var(--text-white);
 }
+
 /* ------------ Global ------------ */
 .container {
     max-width: 1920px;
@@ -63,6 +64,7 @@ header {
 .hidden {
     display: none;
 }
+
 .header {
     display: flex;
     align-items: center;
@@ -111,4 +113,153 @@ header {
 
 .searchIcon h3:hover {
     border: none;
+}
+
+/* ------------ Main ------------ */
+
+main {
+    padding: 21px 21px 0 21px;
+}
+
+/* ------------ Brands ------------ */
+
+.brands {
+    margin-bottom: 30px;
+}
+
+.brands fieldset {
+    user-select: none;
+    border: 2px solid var(--clr-border);
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 12px 29px 11px;
+}
+
+.brands fieldset legend {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 68px;
+    color: var(--clr-black);
+    padding: 0 265px;
+}
+
+.brand {
+    width: 235px;
+    height: 141px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .2s;
+}
+
+.brand:hover {
+    background-color: hsl(180, 7%, 95%);
+}
+
+.brand img {
+    aspect-ratio: 1/1;
+
+}
+
+/* ------------ Offers ------------ */
+.offers {
+    display: grid;
+    grid-template-columns: minmax(300px, 924px) minmax(auto, auto);
+    grid-template-rows: minmax(200px, 434px) minmax(200px, 434px);
+    gap: 30px 29px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "offersOne offersThree"
+        "offersTwo offersThree";
+}
+
+.offer {
+    display: flex;
+    position: relative;
+}
+
+.offer img {
+    position: absolute;
+}
+
+.offersContent {
+    width: 369px;
+    display: flex;
+    flex-direction: column;
+}
+
+.offersContent h1 {
+    font-family: 'Oswald';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+    color: var(--clr-black);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.offersContent p {
+    font-family: 'Roboto Light';
+    font-size: 22px;
+    line-height: 37px;
+    letter-spacing: 0.01em;
+    color: var(--clr-black);
+    margin-bottom: 50px;
+}
+
+
+.offersOne {
+    grid-area: offersOne;
+    background: linear-gradient(90deg, rgba(241, 239, 240, 1) 0%, rgba(241, 240, 240, 1) 50%, rgba(243, 240, 239, 1) 100%);
+}
+
+.offersOne h1 {
+    width: clamp(221px, 100%, 274px);
+}
+
+.offersOne .offersContent {
+    margin: 82px 64px 82px auto;
+}
+
+.offersTwo {
+    grid-area: offersTwo;
+    background: linear-gradient(90deg, rgba(247, 224, 213, 1) 0%, rgb(239, 215, 205) 50%, rgba(210, 189, 179, 1) 100%);
+}
+
+
+.offersTwo img {
+    right: 0;
+}
+
+.offersTwo .offersContent {
+    margin: 82px auto 82px 94px;
+}
+
+.offersTwo h1 {
+    width: clamp(221px, 100%, 352px);
+
+}
+
+.offersThree {
+    grid-area: offersThree;
+    background: #E0DDD5;
+
+}
+
+.offersThree .offersContent {
+    margin: auto auto 133px 94px;
+    z-index: 1;
+}
+
+.offersThree h1 {
+    width: clamp(221px, 100%, 357px);
+    font-size: 96px;
+    line-height: 110px;
+}
+
+.offersThree img {
+    right: 0;
 }

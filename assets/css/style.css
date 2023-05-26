@@ -9,7 +9,7 @@
     --clr-green: hsl(145, 63%, 42%);
     --clr-light-green: hsl(133, 100%, 95%);
     --clr-main: hsl(207, 67%, 94%);
-    --clr-blue: hsl(207, 63%, 63%);
+    --clr-blue: hsl(205, 57%, 88%);
     --clr-border: hsl(0, 0%, 77%);
     --clr-gray: hsl(0, 0%, 51%);
     --clr-black: hsl(0, 0%, 0%);
@@ -37,6 +37,58 @@ header {
 
 }
 
+button {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 15px 35px;
+    width: max-content;
+    font-family: var(--font-headings);
+    font-size: 18px;
+    font-weight: 500;
+    border: 3px solid var(--clr-black);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    border-color: var(--bg-black);
+}
+
+button.addBag {
+    background-color: var(--clr-black);
+    color: var(--text-white);
+}
+
+button.addBag:hover {
+    background-color: var(--clr-main-2);
+    border-color: var(--clr-main-2);
+}
+
+button.kare {
+    width: max-content;
+    height: max-content;
+    background-color: var(--clr-main);
+    border: none;
+    padding: 0 8px;
+}
+
+button.kare:hover {
+    background-color: var(--clr-blue);
+    color: var(--clr-black);
+}
+
+button.bg {
+    padding: 10px 30px;
+    color: var(--clr-gray);
+    background-color: var(--clr-blue);
+    border: 2px solid var(--clr-border);
+}
+
+button.bg:hover {
+    border-color: var(--clr-gray);
+}
 /* ------------ Animation ------------ */
 
 
@@ -64,6 +116,7 @@ header {
 .hidden {
     display: none;
 }
+
 
 .header {
     display: flex;

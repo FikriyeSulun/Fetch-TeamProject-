@@ -1,5 +1,5 @@
 @import './reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Roboto&display=swap');
 
 :root {
     /*------------ Color ------------*/
@@ -17,6 +17,7 @@
     /*------------ TextColor ------------*/
     --text-white: hsl(0, 0%, 98%);
     --text-black: hsl(0, 0%, 30%);
+    --text-red: hsl(0, 79%, 63%);
     /*------------ BackgroundColor ------------*/
     --bg-white: hsl(0, 0%, 98%);
     --bg-black: hsl(0, 0%, 30%);
@@ -174,6 +175,7 @@ main {
     grid-template-areas:
         "offersOne offersThree"
         "offersTwo offersThree";
+    margin-bottom: 30px;
 }
 
 .offer {
@@ -202,7 +204,7 @@ main {
 }
 
 .offersContent p {
-    font-family: 'Roboto Light';
+    font-family: 'Roboto';
     font-size: 22px;
     line-height: 37px;
     letter-spacing: 0.01em;
@@ -262,4 +264,111 @@ main {
 
 .offersThree img {
     right: 0;
+}
+
+/* ------------ Shop Some Wear ------------ */
+.shopSomeWear {
+    display: flex;
+    gap: 30px;
+}
+
+.shopSomeWearLeft h2 {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 68px;
+}
+
+.shopSomeWearLeft {
+    border-right: 1px solid var(--border-gray);
+}
+
+.shopSomeWearLeft label {
+    display: block;
+    min-width: 375px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 68px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.shopSomeWearLeft input {
+    margin-right: 9px;
+}
+
+.shopSomeWearCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(344px, max-content));
+    width: 100%;
+    /* grid-template-columns: minmax(344px, max-content) minmax(344px, max-content) minmax(344px, max-content) minmax(344px, max-content); */
+    /* grid-template-rows: max-content max-content; */
+    gap: 48px 26px;
+}
+
+.shopSomeWearCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.showSomeWearCardImage {
+    width: 344px;
+    height: 450px;
+    margin-bottom: 14px;
+}
+
+.shopSomeWearText {
+    margin-bottom: 18px;
+}
+
+.shopSomeWearText h5 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--text-gray);
+    text-transform: uppercase;
+}
+
+.shopSomeWearCardPrice h3 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-transform: uppercase;
+}
+
+.shopSomeWearCardPrice {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.shopSomeWearCardPrice .discount {
+    color: var(--text-red);
+}
+
+.shopSomeWearCardPrice h6 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+
+.shopSomeWearCard span {
+    background: var(--bg-black);
+    color: var(--text-white);
+    font-weight: 400;
+    font-size: 14px;
+    top: 15px;
+    line-height: 21px;
+    position: absolute;
+    padding: 3px 5px 3px 5px;
 }

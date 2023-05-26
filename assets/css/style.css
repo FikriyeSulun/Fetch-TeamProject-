@@ -15,10 +15,17 @@
     --clr-black: #000;
     --clr-black-2: #3F3F3F;
     /*------------ TextColor ------------*/
+    --text-white: hsl(0, 0%, 98%);
+    --text-black: hsl(0, 0%, 30%);
     /*------------ BackgroundColor ------------*/
+    --bg-white: hsl(0, 0%, 98%);
+    --bg-black: hsl(0, 0%, 30%);
     /*------------ BorderColor ------------*/
+    --border-white: hsl(0, 0%, 98%);
+    --border-gray: hsl(220, 9%, 87%);
 
 }
+
 /* ------------ Components ------------ */
 
 

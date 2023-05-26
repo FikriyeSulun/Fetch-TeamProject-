@@ -1,47 +1,110 @@
 @import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto&display=swap');
 
-:root{
-    --clr-main-2:#EB5757;
-    --clr-pink:#FFE3E3;
-    --clr-advanced:#57A4EB;
-    --clr-green:#27AE60;
-    --clr-light-green:#E3FFE9;
-    --clr-main:#E6F1FA;
-    --clr-blue:#63A6DC;
-    --clr-border:#C4C4C4;
-    --clr-gray:#828282;
-    --clr-black:#000;
-    --clr-black-2:#3F3F3F;
+:root {
+    /*------------ Color ------------*/
+    --clr-main-2: hsl(0, 79%, 63%);
+        --clr-pink: hsl(0, 100%, 95%);
+        --clr-advanced: hsl(209, 79%, 63%);
+        --clr-green: hsl(145, 63%, 42%);
+        --clr-light-green: hsl(133, 100%, 95%);
+        --clr-main: hsl(207, 67%, 94%);
+        --clr-blue: hsl(207, 63%, 63%);
+        --clr-border: hsl(0, 0%, 77%);
+        --clr-gray: hsl(0, 0%, 51%);
+        --clr-black: hsl(0, 0%, 0%);
+        --clr-black-2: hsl(0, 0%, 25%);
+    /*------------ TextColor ------------*/
+    --text-white: hsl(0, 0%, 98%);
+    --text-black: hsl(0, 0%, 30%);
+    /*------------ BackgroundColor ------------*/
+    --bg-white: hsl(0, 0%, 98%);
+    --bg-black: hsl(0, 0%, 30%);
+    /*------------ BorderColor ------------*/
+    --border-white: hsl(0, 0%, 98%);
+    --border-gray: hsl(220, 9%, 87%);
+
+    /*------------ Fonts ------------*/
+        --font-headings: 'Oswald', 'sans-serif';
 }
-        .container {
-            max-width: 1920px;
-            margin: 0 auto;
-        }
-    
-        header {
-            background-color: #000;
-            color: white;
-        }
-    
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-    
-        .menu ul {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
-    
-        .menu li {
-            list-style: none;
-        }
-    
-        .shopping {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-        }
+
+/* ------------ Components ------------ */
+
+header {
+    background-color: var(--clr-black);
+    color: var(--text-white);
+    font-family: var(--font-headings);
+
+}
+
+/* ------------ Animation ------------ */
+
+
+.searchIcon input {
+    width: 130px;
+    border: none;
+    background-color: var(--clr-black);
+    color: var(--text-white);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.searchIcon input[type=text]:focus {
+    width: 300px;
+    border-bottom: 1px solid var(--text-white);
+}
+/* ------------ Global ------------ */
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    padding-inline: 20px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu li {
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.menu h3:hover {
+    border-bottom: 3px solid var(--clr-main-2);
+    cursor: pointer;
+}
+
+.shopping {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.shopping h3:hover {
+    border-bottom: 3px solid var(--clr-main-2);
+    cursor: pointer;
+}
+
+.shopping .fa-sharp:hover {
+    cursor: pointer;
+    color: var(--clr-main-2);
+}
+
+.searchIcon {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.searchIcon h3:hover {
+    border: none;
+}

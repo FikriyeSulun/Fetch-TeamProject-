@@ -1,0 +1,16 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto&display=swap');
+
+:root{
+    --clr-main-2:#EB5757;
+    --clr-pink:#FFE3E3;
+    --clr-advanced:#57A4EB;
+    --clr-green:#27AE60;
+    --clr-light-green:#E3FFE9;
+    --clr-main:#E6F1FA;
+    --clr-blue:#63A6DC;
+    --clr-border:#C4C4C4;
+    --clr-gray:#828282;
+    --clr-black:#000;
+    --clr-black-2:#3F3F3F;
+}

@@ -90,6 +90,7 @@ button.bg {
 button.bg:hover {
     border-color: var(--clr-gray);
 }
+
 /* ------------ Animation ------------ */
 
 
@@ -117,6 +118,7 @@ button.bg:hover {
 .hidden {
     display: none;
 }
+
 .header {
     display: flex;
     align-items: center;
@@ -423,10 +425,12 @@ main {
     position: absolute;
     padding: 3px 5px 3px 5px;
 }
-/* -----shopping without limits----- */
+
+/* ------------ Shopping Without Limits ------------ */
 
 .shoppingWithoutLimits {
-    display: flex;
+    height: 467px;
+    margin-bottom: 67px;
 }
 
 .limitsLeft {
@@ -437,31 +441,32 @@ main {
     z-index: 1;
 }
 
-.limitsContent {
+.limitsContent{
     margin: 77px auto 78px 269px;
     width: 639px;
     display: flex;
 }
 
-.limitsContentborder {
+.topRightBorder {
     position: absolute;
     height: 100.5px;
     width: 602px;
     border-top: 2px solid #000000;
     border-right: 2px solid #000000;
+    margin-left: 37px;
 }
 
-.limitsContent h1 {
+.limitsContent h1, .exploreContent h1{
     font-family: var(--font-headings);
     font-weight: 500;
     font-size: 56px;
     line-height: 72px;
     color: var(--clr-black);
     text-transform: uppercase;
-    margin-bottom: 17px;
+    margin: 17px 0;
 }
 
-.limitsContent p {
+.limitsContent p, .exploreContent p {
     font-family: 'Roboto Light';
     font-size: 25px;
     line-height: 37px;
@@ -471,10 +476,22 @@ main {
 }
 
 .limitsImg {
-    right: 0;
+    right: 21px;
     position: absolute;
     height: 467px;
     width: 1210px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
+/* ------------ Explore The Best Of You ------------ */
+
+.exploreTheBestOfYou {
+    height: 363px;
+    width: 1798px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exploreContent{
+    width: 640px;
+    display: flex;
+}

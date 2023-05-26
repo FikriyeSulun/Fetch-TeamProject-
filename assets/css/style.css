@@ -14,3 +14,34 @@
     --clr-black:#000;
     --clr-black-2:#3F3F3F;
 }
+        .container {
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+    
+        header {
+            background-color: #000;
+            color: white;
+        }
+    
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .menu ul {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+    
+        .menu li {
+            list-style: none;
+        }
+    
+        .shopping {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }

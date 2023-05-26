@@ -263,3 +263,60 @@ main {
 .offersThree img {
     right: 0;
 }
+
+
+
+/* -----shopping without limits----- */
+
+.shoppingWithoutLimits {
+    display: flex;
+}
+
+.limitsLeft {
+    position: absolute;
+    height: 467px;
+    width: 1357px;
+    background: linear-gradient(90deg, #DDEBF1 0%, #D3E5EE 42.71%, #C8DEEC 69.27%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+.limitsContent {
+    margin: 77px auto 78px 269px;
+    width: 639px;
+    display: flex;
+}
+
+.limitsContentborder {
+    position: absolute;
+    height: 100.5px;
+    width: 602px;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+
+.limitsContent h1 {
+    font-family: var(--font-headings);
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 72px;
+    color: var(--clr-black);
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+.limitsContent p {
+    font-family: 'Roboto Light';
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.01em;
+    color: var(--clr-black);
+    margin-bottom: 24px;
+}
+
+.limitsImg {
+    right: 0;
+    position: absolute;
+    height: 467px;
+    width: 1210px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}

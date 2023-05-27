@@ -1,5 +1,5 @@
 @import './reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Roboto&display=swap');
 
 :root {
     /*------------ Color ------------*/
@@ -14,9 +14,20 @@
     --clr-gray: hsl(0, 0%, 51%);
     --clr-black: hsl(0, 0%, 0%);
     --clr-black-2: hsl(0, 0%, 25%);
+    --clr-pink: hsl(0, 100%, 95%);
+    --clr-advanced: hsl(209, 79%, 63%);
+    --clr-green: hsl(145, 63%, 42%);
+    --clr-light-green: hsl(133, 100%, 95%);
+    --clr-main: hsl(207, 67%, 94%);
+    --clr-blue: hsl(205, 57%, 88%);
+    --clr-border: hsl(0, 0%, 77%);
+    --clr-gray: hsl(0, 0%, 51%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-black-2: hsl(0, 0%, 25%);
     /*------------ TextColor ------------*/
     --text-white: hsl(0, 0%, 98%);
     --text-black: hsl(0, 0%, 30%);
+    --text-red: hsl(0, 79%, 63%);
     /*------------ BackgroundColor ------------*/
     --bg-white: hsl(0, 0%, 98%);
     --bg-black: hsl(0, 0%, 30%);
@@ -37,6 +48,62 @@ header {
 
 }
 
+button {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 15px 35px;
+    width: max-content;
+    font-family: var(--font-headings);
+    font-size: 18px;
+    font-weight: 500;
+    border: 3px solid var(--clr-black);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    border-color: var(--bg-black);
+}
+
+button.inverted {
+    background-color: var(--bg-white);
+    color: var(--text-black);
+}
+button.addBag {
+    background-color: var(--clr-black);
+    color: var(--text-white);
+}
+
+button.addBag:hover {
+    background-color: var(--clr-main-2);
+    border-color: var(--clr-main-2);
+}
+
+button.kare {
+    width: max-content;
+    height: max-content;
+    background-color: var(--clr-main);
+    border: none;
+    padding: 0 8px;
+}
+
+button.kare:hover {
+    background-color: var(--clr-blue);
+    color: var(--clr-black);
+}
+
+button.bg {
+    padding: 10px 30px;
+    color: var(--clr-gray);
+    background-color: var(--clr-blue);
+    border: 2px solid var(--clr-border);
+}
+
+button.bg:hover {
+    border-color: var(--clr-gray);
+}
 button {
     display: inline-block;
     text-transform: uppercase;
@@ -94,6 +161,7 @@ button.bg:hover {
 
 
 .searchIcon input {
+    outline: 0;
     width: 300px;
     border-bottom: 1px solid var(--border-white);
     background-color: var(--clr-black);
@@ -103,7 +171,6 @@ button.bg:hover {
 }
 
 .searchIcon input[type=text]:focus {
-    width: 300px;
     border-bottom: 1px solid var(--text-white);
 }
 
@@ -227,6 +294,7 @@ main {
     grid-template-areas:
         "offersOne offersThree"
         "offersTwo offersThree";
+    margin-bottom: 30px;
 }
 
 .offer {
@@ -255,7 +323,7 @@ main {
 }
 
 .offersContent p {
-    font-family: 'Roboto Light';
+    font-family: 'Roboto';
     font-size: 22px;
     line-height: 37px;
     letter-spacing: 0.01em;
@@ -315,4 +383,170 @@ main {
 
 .offersThree img {
     right: 0;
+}
+
+/* ------------ Shop Some Wear ------------ */
+.shopSomeWear {
+    display: flex;
+    gap: 30px;
+}
+
+.shopSomeWearLeft h2 {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 68px;
+}
+
+.shopSomeWearLeft {
+    border-right: 1px solid var(--border-gray);
+}
+
+.shopSomeWearLeft label {
+    display: block;
+    min-width: 375px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 68px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.shopSomeWearLeft input {
+    margin-right: 9px;
+}
+
+.shopSomeWearCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(344px, max-content));
+    width: 100%;
+    /* grid-template-columns: minmax(344px, max-content) minmax(344px, max-content) minmax(344px, max-content) minmax(344px, max-content); */
+    /* grid-template-rows: max-content max-content; */
+    gap: 48px 26px;
+}
+
+.shopSomeWearCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.showSomeWearCardImage {
+    width: 344px;
+    height: 450px;
+    margin-bottom: 14px;
+}
+
+.shopSomeWearText {
+    margin-bottom: 18px;
+}
+
+.shopSomeWearText h5 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--text-gray);
+    text-transform: uppercase;
+}
+
+.shopSomeWearCardPrice h3 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-transform: uppercase;
+}
+
+.shopSomeWearCardPrice {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.shopSomeWearCardPrice .discount {
+    color: var(--text-red);
+}
+
+.shopSomeWearCardPrice h6 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+
+.shopSomeWearCard span {
+    background: var(--bg-black);
+    color: var(--text-white);
+    font-weight: 400;
+    font-size: 14px;
+    top: 15px;
+    line-height: 21px;
+    position: absolute;
+    padding: 3px 5px 3px 5px;
+}
+/*Footer*/
+footer {
+    background-color: var(--clr-black);
+    color: var(--text-white);
+    font-family: var(--font-headings);
+}
+
+footer li {
+    font-size: 13px;
+    margin-top: 5px;
+    color: var(--clr-gray);
+}
+
+footer li:hover {
+    cursor: pointer;
+}
+
+footer li h5 {
+    color: var(--text-white);
+    font-size: 12px;
+}
+
+footer li h5:hover {
+    cursor: text;
+}
+
+footer input[type='text'] {
+    margin-top: 10px;
+    width: 80%;
+    height: 40px;
+}
+
+footer button {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.footerSocial li {
+    margin-top: 30px;
+}
+
+.footerSocial a {
+    margin-left: 10px;
+    font-size: 13px;
+    margin-top: 5px;
+    color: var(--clr-gray);
+}
+
+.footerFlex {
+    display: flex;
+    align-items: flex-start;
+    padding: 100px 50px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--clr-gray);
+}
+
+.copyright {
+    padding-block: 30px;
 }

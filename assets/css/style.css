@@ -1,5 +1,5 @@
 @import './reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
 
 :root {
     /*------------ Color ------------*/
@@ -71,6 +71,7 @@ button.inverted {
     background-color: var(--bg-white);
     color: var(--text-black);
 }
+
 button.addBag {
     background-color: var(--clr-black);
     color: var(--text-white);
@@ -104,6 +105,7 @@ button.bg {
 button.bg:hover {
     border-color: var(--clr-gray);
 }
+
 button {
     display: inline-block;
     text-transform: uppercase;
@@ -184,6 +186,7 @@ button.bg:hover {
 .hidden {
     display: none;
 }
+
 .header {
     display: flex;
     align-items: center;
@@ -550,12 +553,29 @@ main {
 
 .limitsContent p,
 .exploreContent p {
-    font-family: 'Roboto Light';
+    font-family: 'Roboto';
     font-size: 25px;
     line-height: 37px;
     letter-spacing: 0.01em;
     color: var(--clr-black);
     margin-bottom: 24px;
+}
+
+.limitsContent button,
+.exploreContent button {
+    height: 56px;
+    width: 175px;
+    font-family: 'Oswald';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: transparent;
 }
 
 .limitsImg {
@@ -572,6 +592,8 @@ main {
     width: 1798px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 82px;
+
 }
 
 .exploreContent {
@@ -579,7 +601,112 @@ main {
     display: flex;
 }
 
+/* ------------ Blog ------------ */
+
+.blog {
+    padding: 46px 21px 0 21px;
+    height: 564px;
+    width: 1920px;
+    background: #F8F9FB;
+}
+
+.blogCards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.blogCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 24.16px 0px 24.16px;
+    height: 420px;
+    width: 447px;
+    background: #FFFFFF;
+}
+
+.blogCard h3 {
+    font-family: 'Oswald';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #BDBDBD;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+}
+
+.blogCard h2 {
+    font-family: 'Oswald';
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 39px;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+.blogCard p {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.blogCardDate {
+    height: 36px;
+    width: 406px;
+}
+
+.blogCard h4 {
+    height: 36px;
+    width: 406px;
+    position: absolute;
+
+    font-family: 'Oswald';
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 37px;
+    color: #4F4F4F;
+    display: flex;
+    align-items: center;
+    border-top: 3px solid #000000;
+}
+
+/* ------------ Advantages ------------ */
+
+.advantages {
+    padding-left: 217px;
+    padding-right: 189px;
+    background: #E6F1FA;
+    height: 100px;
+    width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 203px;
+}
+
+.advantage {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.advantage img {
+    height: 9px;
+    width: 14px;
+}
+
+.advantage h4 {
+    font-family: 'Oswald';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
 /*Footer*/
+
 footer {
     background-color: var(--clr-black);
     color: var(--text-white);

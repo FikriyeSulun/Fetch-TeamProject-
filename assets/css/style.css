@@ -388,6 +388,7 @@ main {
 }
 
 /* ------------ Shop Some Wear ------------ */
+
 .shopSomeWear {
     display: grid;
     grid-template-columns: 375px 1fr;
@@ -576,6 +577,14 @@ main {
     justify-content: center;
     text-transform: uppercase;
     background-color: transparent;
+}
+
+.limitsContent button:hover,
+.exploreContent button:hover{
+        cursor: pointer;
+        background-color: var(--bg-black);
+        color: var(--text-white);
+        border-color: var(--bg-black);
 }
 
 .limitsImg {

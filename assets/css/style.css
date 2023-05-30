@@ -420,6 +420,7 @@ main {
 }
 
 .shopSomeWearCards {
+    cursor: pointer;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(344px, max-content));
     width: 100%;

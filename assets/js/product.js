@@ -19,6 +19,9 @@ shopSomeWearButton.addEventListener('click', () => {
     })
 });
 
+function asd(){
+    
+}
 
 let shopSomeWearLeftList = document.querySelector('.shopSomeWearLeftList');
 let listCategory = () => {

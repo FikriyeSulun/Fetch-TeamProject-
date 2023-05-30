@@ -581,11 +581,11 @@ main {
 }
 
 .limitsContent button:hover,
-.exploreContent button:hover{
-        cursor: pointer;
-        background-color: var(--bg-black);
-        color: var(--text-white);
-        border-color: var(--bg-black);
+.exploreContent button:hover {
+    cursor: pointer;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    border-color: var(--bg-black);
 }
 
 .limitsImg {
@@ -614,16 +614,14 @@ main {
 /* ------------ Blog ------------ */
 
 .blog {
-    padding: 46px 21px 0 21px;
-    height: 564px;
-    width: 1920px;
+    padding: 46px 21px 46px 21px;
+    margin-inline: -21px;
     background: #F8F9FB;
 }
 
 .blogCards {
     display: flex;
     gap: 30px;
-    flex-wrap: wrap;
 }
 
 .blogCard {
@@ -688,9 +686,9 @@ main {
 .advantages {
     padding-left: 217px;
     padding-right: 189px;
+    margin-inline: -21px;
     background: #E6F1FA;
     height: 100px;
-    width: 1920px;
     display: flex;
     justify-content: space-between;
     align-items: center;

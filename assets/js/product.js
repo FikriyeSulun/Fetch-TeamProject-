@@ -1,6 +1,6 @@
 let shopSomeWearCards = document.querySelector('.shopSomeWearCards');
 const shopSomeWearButton = document.querySelector('#shopSomeWearButton');
-
+let shopSomeWearCard = document.querySelectorAll('.shopSomeWearCard');
 let products;
 fetch('https://dummyjson.com/products')
     .then(res => res.json())
@@ -13,10 +13,15 @@ fetch('https://dummyjson.com/products')
 
 
 shopSomeWearButton.addEventListener('click', () => {
-    document.querySelectorAll('.shopSomeWearCards > *:nth-child(n+9)').forEach(item => { item.style.display = 'block' 
-    shopSomeWearButton.style.display = 'none';})
+    document.querySelectorAll('.shopSomeWearCards > *:nth-child(n+9)').forEach(item => {
+        item.style.display = 'block'
+        shopSomeWearButton.style.display = 'none';
+    })
 });
 
+function asd(){
+    
+}
 
 let shopSomeWearLeftList = document.querySelector('.shopSomeWearLeftList');
 let listCategory = () => {
@@ -37,8 +42,8 @@ let listProducts = (param) => {
 
     if (param !== "") {
         products.filter(item => item.category === `${param}`).forEach(item => {
-            shopSomeWearCards.innerHTML += `<div class="shopSomeWearCard">
-<div class="showSomeWearCardImage">
+            shopSomeWearCards.innerHTML += `<div class="shopSomeWearCard" onclick="routeProducts()">
+<div class="showSomeWearCardImage" >
     <img src="${item.thumbnail}" alt="">
 </div>
 <div class="shopSomeWearText">
@@ -48,11 +53,13 @@ let listProducts = (param) => {
 <div class="shopSomeWearCardPrice">
     <h3>${item.price} EUR</h3>
 </div>
-</div>`});
+</div>`;
+        });
     }
     else {
         products.forEach(item => {
-            shopSomeWearCards.innerHTML += `<div class="shopSomeWearCard">
+
+            shopSomeWearCards.innerHTML += `<div class="shopSomeWearCard" onclick="routeProducts()">
             <div class="showSomeWearCardImage">
                 <img src="${item.thumbnail}" alt="">
             </div>
@@ -63,7 +70,9 @@ let listProducts = (param) => {
             <div class="shopSomeWearCardPrice">
                 <h3>${item.price} EUR</h3>
             </div>
-            </div>`});
+            </div>`;
+            shopSomeWearCard.forEach(item => item.addEventListener('click', routeProducts()));
+        });
     }
 
 

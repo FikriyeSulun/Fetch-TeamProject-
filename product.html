@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="assets/js/product.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header">
+            <a href="#">
+                <img src="assets/images/svg/crisp_logo.svg" alt="">
+            </a>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <h3>HOME</h3>
+                    </li>
+                    <li>
+                        <h3>SHOP</h3>
+                    </li>
+                    <li>
+                        <h3>BLOG</h3>
+                    </li>
+                    <li>
+                        <h3>SALE</h3>
+                    </li>
+                    <li>
+                        <h3>CONTACT US</h3>
+                    </li>
+                    <li class="searchIcon">
+                        <input type="text" class="realSearch hidden"></input>
+                        <i class="fa-sharp fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                        <h3>SEARCH</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="shopping">
+                <h3>SIGN IN</h3>
+                <h3>CREATE AN ACCOUNT</h3>
+                <i class="fa-sharp fa-regular fa-heart" style="color: #ffffff; width: 50px;"></i>
+                <i class="fa-sharp fa-solid fa-bag-shopping" style="color: #ffffff; width: 50px;"></i>
+                <div>
+                    <h5>Shopping Card</h5>
+                    <h4>0,00 EUR</h4>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="containerProduct">
+            <div class="productLeftImages">
+                <img src="assets/images/png/big-ref.png" alt="">
+                <img src="assets/images/png/big-ref.png" alt="">
+                <img src="assets/images/png/big-ref.png" alt="">
+            </div>
+            <div class="productTop">
+                <div class="productMainImage">
+                    <img src="assets/images/png/big-ref.png" alt="">
+                    <div class="productMainImageSocial">
+                        <h6>Share : </h6>
+                        <a href="#"><img src="assets/images/svg/facebook.svg" alt=""></a>
+                        <a href="#"><img src="assets/images/svg/twitter.svg" alt=""></a>
+                        <a href="#"><img src="assets/images/svg/pinterest.svg" alt=""></a>
+                        <a href="#"><img src="assets/images/svg/instagram.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="productMainInfo">
+                    <p><span class="productMainInfoPath">
+                            <a href="index.html">Home</a> / <a href="#">Womens Dress</a> / <a href="#">Angels
+                                malu</a></span></p>
+                    <h3><span class="productMainInfoFendi">FENDI</span></h3>
+                    <h2>Women Black Checked Fit and Flare Dress</h2>
+                    <div class="productMainInfoColorSection">
+                        <p>SELECT COLOR</p>
+                        <div class="productMainInfoColors">
+                            <div style="background-color: red;" class="selected"></div>
+                            <div style="background-color: red;"></div>
+                            <div style="background-color: red;"></div>
+                        </div>
+                    </div>
+                    <div class="productMainInfoSizeGuide">
+                        <p>Select size (Inches)</p>
+                        <a href="#"> Size Guide</a>
+                    </div>
+                    <div class="productMainInfoSize">
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                        <div class="avaible">osfa</div>
+                    </div>
+                    <div class="quantityPriceSection">
+                        <div class="quantityPrice">
+                            <h4>Quantity</h4>
+                            <span class="quantityMinus" onclick="minus(event, this)">-</span>
+                            <input type="text" value="1">
+                            <span class="quantityPlus" onclick="plus(event, this)">+</span>
+                        </div>
+                        <div class="quantityPrice">
+                            <h4>PRICE</h4>
+                            <h3>90,00 EUR</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="productDetails"></div>
+            <div class="productOtherInfo"></div>
+            <div class="productOtherOptions"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+
+            <div class="footerFlex">
+                <ul>
+                    <a href="#">
+                        <img src="assets/images/svg/crisp_logo.svg" alt="">
+                    </a>
+                </ul>
+                <ul>
+                    <h3> FEATURES</h3>
+                    <li>MEN</li>
+                    <li>WOMEN</li>
+                    <li>BOYS</li>
+                    <li>GIRLS</li>
+                    <li>NEW ARRIVALS</li>
+                    <li>SHOES</li>
+                    <li>COTHES</li>
+                    <li>ACCESSORIES</li>
+                </ul>
+                <ul>
+                    <h3>MENU</h3>
+                    <li>ABOUT US</li>
+                    <li>MY ACCOUNT</li>
+                    <li>ORDERS HISTORY</li>
+                    <li>MY WISHLIST</li>
+                    <li>BLOG</li>
+                    <li>LOGIN</li>
+                </ul>
+                <ul>
+                    <h3>CONTACT US</h3>
+                    <li>
+                        <h5>ADDRESS:</h5>
+                    </li>
+                    <li>123 STREET NAME, CITY, ENGLAND</li>
+                    <li>
+                        <h5>PHONE:</h5>
+                    </li>
+                    <li>(123) 456 7890</li>
+                    <li>
+                        <h5>MAIL:</h5>
+                    </li>
+                    <li>MAIL@EXAPLE.COM</li>
+                    <li>
+                        <h5>WORKING DAYS/HOURS:</h5>
+                    </li>
+                    <li>MON - SUN / 9:00AM - 8:00PM</li>
+                </ul>
+                <ul class="footerSocial">
+                    <h3>FOLLOW US</h3>
+                    <li>
+                        <i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i>
+                        <a href="#">FACEBOOK</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-square-twitter fa-2xl" style="color: #ffffff;"></i>
+                        <a href="#">TWIITER</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                        <a href="#">INSTAGRAM</a>
+                    </li>
+                </ul>
+                <ul>
+                    <h3>JOIN US</h3>
+                    <li>SUBSCRIBE TO OUR NEWSLETTERS</li>
+                    <input type="text" placeholder="Email Address">
+                    <button class="inverted">SUBSCRIBE</button>
+                </ul>
+
+            </div>
+            <h3 class="copyright">© 2019. Crisp theme Developed by Belvg</h3>
+        </div>
+    </footer>
+</body>
+
+</html>
